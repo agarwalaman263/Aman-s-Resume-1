@@ -1,0 +1,240 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Aman Agarwal} \\ \vspace{1pt}
+    \small +91-8319596676 $|$ 
+    \href{mailto:agarwalaman263@gmail.com}
+        {\underline{agarwalaman263@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/amanagarwal123/}
+        {\underline{linkedin.com/in/amanagarwal123}} $|$
+    \href{https://github.com/agarwalaman263}{\underline{github.com/agarwalaman263}}  $|$
+    \href{https://www.amanagarwal.in}{\underline{amanagarwal.in}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vellore Institute of Technology}{Vellore, India}
+      {Bachelor of Technology in Computer Science and Engineering}{April. 2015 -- March. 2019}
+    \resumeSubheading
+      {Delhi Public School}{Indore, India}
+      {Senior Secondary School}{April. 2012 -- April. 2014}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Engineer}{July 2019 -- Present}
+      {Philips}{Bengaluru, India}
+      \resumeItemListStart
+      \resumeItem
+        {SSO integration and custom authorization for Angular Web Apps}
+        \resumeItem
+        {creating Angular components and enhancing web apps.}
+        \resumeItem
+        {Creating micro-services using SpringBoot and Hibernate with test coverage over 90\%.}
+        \resumeItem
+        {Deploying micro-services in dockerized environment and Cloudfoundry.}
+        \resumeItem
+        {Increasing the Fortify and Blackduck scores to improve the code  quality.}
+        \resumeItem
+        {Development of Init Container for Kubernetes Pod.}
+        \resumeItem
+        {Vault integration to existing micro-services for storing sensitive credentials.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Software Intern}{January 2019 -- July 2019}
+      {Philips}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem
+        {Externalizing the service logs to configuration files.}
+        \resumeItem
+        {Distributing and installing private node modules without using private repository.}
+        \resumeItem
+        {Various enabler P.O.Cs related to Java, Angular and Spring.}
+        \resumeItem
+        {Writing scripts for automating the build pipeline and deployment.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Summer Intern}{May 2018 - July 2018}
+      {Kuehne Nagel}{Gurugram, India}
+      \resumeItemListStart
+        \resumeItem
+            {Creating a user interface using Vanilla JavaScript and integrating it with Python APIs  }
+        \resumeItem
+            {Development of customer facing backend API to support the user interface.}
+        \resumeItem
+            {Maintaining and linking the relational database to the python applications and to perform CRUD operations.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Patient Monitoring System (PMS)} $|$ \emph{NodejS, RabbitMQ, Angular, PostgreSQL, Spring}}{}
+          \resumeItemListStart
+            \resumeItem{PMS is an application meant for monitoring the vitals of a patient and triggering a notification to the doctor in case of emergency.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{E-Blood Bank} $|$ \emph{Google Maps API, Angular, Python, PostgreSQL, Heroku }}{}
+          \resumeItemListStart
+            \resumeItem{E-Blood Bank is a full stack application which is used to trace the nearest blood donors to a location. It also provides a functionality to register a user as a donor as well as search for blood donors located in proximity.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{VOS} $|$ \emph{Javascript, Electron, PostgreSQL, Heroku, Cherrio }}{}
+          \resumeItemListStart
+            \resumeItem{VOS is an electron application which is filled with features like multitasking, resizing of windows, etc. The data was fetched by scraping the college website and developing more accessibility for students.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%-----------Achievements-----------
+\section{Achievements}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Spot Award} $|$ \emph{Philips}}{}
+          \resumeItemListStart
+            \resumeItem{Recognition for completion and usage of POC for distributing and installing private node modules without using private repository.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, JavaScript, Python, HTML, CSS, Sass, TypeScript, SQL, NodeJs} \\
+     \textbf{Frameworks}{: Angular, Spring, SpringBoot, JUnit, Express, Flask} \\
+     \textbf{Developer Tools}{: Git, Docker, VS Code, Postman, Kubernetes, Eclipse, RabbitMQ, Linux} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
